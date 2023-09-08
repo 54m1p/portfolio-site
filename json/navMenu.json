@@ -1,0 +1,27 @@
+{
+    "menu": [
+        {
+            "id": 1,
+            "name":"Home",
+            "link": "/"
+        },
+        {
+            "id": 2,
+            "name":"About",
+            "link": "/About"
+        },
+        {
+            "id": 3,
+            "name":"Works",
+            "link": "/Works"
+        },
+        {
+            "id": 4,
+            "name":"Services",
+            "link": "/Services"
+        },{
+            "id": 5,
+            "name":"Contact",
+            "link": "/Contact"
+        }
+    ]}
