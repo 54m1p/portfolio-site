@@ -7,9 +7,9 @@ import skills from '../../../json/skills.json'
 import experiences from '../../../json/experience.json'
 import Progress from "../others/progress";
 import { GoDot, GoDotFill } from 'react-icons/go';
+import '../../css/about.css'
 
 const About = () => {
-    console.log(skills.skills, 'skills from abt page')
     return (
         <>
             <Header />
@@ -22,10 +22,10 @@ const About = () => {
                         <p className="display-4">About Me</p>
                     </div>
                 </div>
-                <div className="section bg-white text-black">
-                    <div className="container d-flex justify-content-between p-5">
+                <div className="section bg-white text-black center-xy">
+                    <div className="container d-flex profile">
                         <div className="w-50">
-                            <div>
+                            <div className="profile-text">
                                 <p className="display-6 text-center text-secondary  ">Samip Neupane</p>
                                 <p className="lead">Hello, I'm Samip Neupane, a passionate Computer Engineer and Front-End Web Developer with a relentless curiosity for technology and a creative flair for designing captivating digital experiences. Welcome to my personal corner of the web!</p>
                                 <div>
@@ -39,9 +39,9 @@ const About = () => {
 
                     </div>
                 </div>
-                <div className="section pt-5 mt-3">
-                    <div className="container mt-4 d-flex justify-content-around">
-                        <div className="w-50">
+                <div className="section">
+                    <div className="container d-flex skill-exp">
+                        <div className="w-50 skill">
                             <p className="display-6 text-center">Skills</p>
                             <div className="d-flex justify-content-center align-items-center">
                                 <div className="w-100">
@@ -56,23 +56,27 @@ const About = () => {
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div className="exp">
+                            <div>
                             <p className="display-6 text-center">Experiences</p>
                             <div>
+                                <ul>
                                 {experiences.experience.map((experience) => (
-                                    <ul>
-                                        <li>
-                                            <GoDotFill /> <strong>({experience.duration})</strong><span> {experience.name} </span>{experience.company && <span> at {experience.company}</span>}
+                                    
+                                        <li className="exp-li d-flex">
+                                             <strong><GoDotFill />({experience.duration})</strong><span></span><span> {experience.name} </span>{experience.company && <span> at {experience.company}</span>}
                                         </li>
-                                    </ul>
+                                
                                 ))}
+                                    </ul>
+                            </div>
                             </div>
                         </div>
 
                     </div>
                 </div>
                 <div className="section">
-                    <div className="container d-flex justify-content-around">
+                    <div className="container d-flex project-edu">
                         <div>
                             <p className="display-6 ">Education</p>
                             <div>

@@ -14,7 +14,7 @@ const Contact = ()=>{
                     </div>
                 </div>
             </div> 
-            <div className="m-3">
+            <div className="m-3 w-50 mx-auto">
                 <ContactForm/>
             </div>
             <Footer/>

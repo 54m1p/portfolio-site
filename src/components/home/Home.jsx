@@ -1,18 +1,17 @@
 import bgimg from "../../../images/bg.jpg";
 import Header from "./../site-header/Header";
-import "../../css/home.css";
-import { Button } from "bootstrap";
+import '../../css/home.css'
 import Footer from "../footer/Footer";
 import services from '../../../json/services.json';
 import Service from "../others/Service";
-import { useState } from "react";
-import BackgroundImage from "../BackgroundImage";
+// import { useState } from "react";
+// import BackgroundImage from "../BackgroundImage";
 
 const Home = () => {
     return (
         <>
             <Header/> 
-            <div className="body ">
+            <div className="body">
                 {/* <BackgroundImage 
                 img={bgimg}
                  /> */}
@@ -28,15 +27,15 @@ const Home = () => {
                     <h2 className="display-5 ">What I do.</h2>
                     <p className="lead">I create intuitive, dynamic and responsive user experiences</p>
                     <div>
-                        <div className="services d-flex justify-content-between">
+                        <div className="services-home">
                             {services.services.map((service)=>(
-                                <>
-                                    <Service
+                                <div className="text-center service">
+                                    <Service 
                                         name ={service.name}
                                         info = {service.info}
                                     />
                                     
-                                </>
+                                </div>
                             ))}
                         </div>
                     </div>

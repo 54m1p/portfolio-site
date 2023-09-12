@@ -3,16 +3,16 @@
 :root{
   --header-height: 3rem;
   font-family: damion;
-
+  width: 100%;
+}
+.body{
+  width: 100%;
 }
 
-  li{
-    list-style: none;
+li{
+  list-style: none;
 }
 
-.section{
-  height: 50vh;
-}
 .section1{
   height: 25vh;
 }
@@ -21,10 +21,12 @@
 }
 
 .center-xy{
-  height: 50vh;
+  /* height: 50vh; */
+  padding-top: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;   
+  text-align: center;
 }
 
 .learn-more-btn{
@@ -33,4 +35,34 @@
 }
 .learn-more-btn:hover{
   text-decoration: underline;
+}
+@media only screen and (max-width:600px) {
+  :root{
+    font-size: 1rem;
+  }
+  .section{
+    width: 100%;
+    margin: 20px 0;
+  }
+  .container{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+}
+
+@media only screen and (min-width:600px)  {
+  /* For tablets */
+  .section{
+    min-height: 50vh;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width:768px){
+  /* For desktop */
+  .section{
+    min-height: 60vh;
+    width: 100%;
+  }
 }

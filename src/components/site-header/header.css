@@ -2,11 +2,11 @@ body{
     font-family: sans-serif;
 }
 .logo{
-    width: 100px;
-    height: 70px;
+    /* width: 100%;
+    height: 70%; */
     flex: 2;
 }
-.nav-bar{
+.nav-div{
     flex: 1;
 }
 
@@ -17,4 +17,19 @@ body{
 .link:hover{
     color: grey;
     cursor: pointer;
+}
+.burger{
+    /* flex: 1; */
+    display: none;
+    cursor: pointer;
+    
+}
+
+@media only screen and (max-width:900px) {
+    .burger{display: block;}
+    .nav-div{display: none;}
+    .nav-bar{display: grid;}
+}
+@media only screen and (min-width:600px){
+    
 }

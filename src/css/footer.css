@@ -1,0 +1,22 @@
+.prefoot{
+    display: flex;
+}
+
+@media only screen and (max-width:600px) {
+    .prefoot{
+        flex-direction: column;
+        /* justify-content: center; */
+    }
+}
+
+@media only screen and (min-width:600px){
+    .prefoot{
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (min-width:768px){
+    .prefoot{
+        justify-content: space-around;
+    }
+}
