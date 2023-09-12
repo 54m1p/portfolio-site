@@ -1,9 +1,11 @@
-/* .bg {
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  } */
+@import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
+
+:root{
+  --header-height: 3rem;
+  font-family: damion;
+
+}
+
   li{
     list-style: none;
 }
@@ -11,4 +13,24 @@
 .section{
   height: 50vh;
 }
+.section1{
+  height: 25vh;
+}
+.margin-auto{
+  margin: auto;
+}
 
+.center-xy{
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+}
+
+.learn-more-btn{
+  border: none;
+  background: transparent;
+}
+.learn-more-btn:hover{
+  text-decoration: underline;
+}

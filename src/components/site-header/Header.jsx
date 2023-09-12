@@ -5,10 +5,10 @@ import './header.css'
 const Header = ()=>{
     return(
         <>
-        <div className="site-header bg-black text-white pt-2">
+        <div className="site-header bg-black text-white pt-4">
             <div className='d-flex justify-content-between container'>
                 <div className="logo ">
-                    <img src={logo} alt="" />
+                    <Link className='link' to="/" ><img src={logo} alt="" /></Link>
                 </div>
                     <ul className='nav-bar d-flex justify-content-around align-items-center '>
                         {navMenu.menu.map((menu)=>(

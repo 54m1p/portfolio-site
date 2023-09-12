@@ -12,15 +12,11 @@
         },
         {
             "id": 3,
-            "name":"Works",
-            "link": "/Works"
+            "name":"Portfolio",
+            "link": "/Portfolio"
         },
         {
             "id": 4,
-            "name":"Services",
-            "link": "/Services"
-        },{
-            "id": 5,
             "name":"Contact",
             "link": "/Contact"
         }
