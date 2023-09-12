@@ -1,18 +1,32 @@
+@media only screen and (max-width:600px){
+    .services-home{
+        display: flex;
+        flex-direction: column;
+    }
+    
 
-.home-about{
-    /* margin-top: 5rem; */
-    width: 50%;
-    /* top: 40%; */
-    color: black;
-}
-.home-about-child{
-    top: 0;
 }
 
-/* .black-bg{
-    background: black;
-} */
-.white-bg{
-    background: white;
-    color: black;
+@media only screen and (min-width:600px){
+    .services-home{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
 }
+
+@media only screen and (min-width:768px){
+    .services-home{
+        display: flex;
+    }
+    .services-home div{
+    width: 20rem;
+
+    }
+}
+
+.services-home div{
+    border: 1px solid #80808066;
+    padding: 1rem;
+    border-radius: 10px;
+    /* margin: 10px; */
+}   

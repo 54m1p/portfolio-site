@@ -1,0 +1,15 @@
+{
+    "experience":[
+        {
+            "id":1,
+            "name":"Web development intern",
+            "company":"Syndrome Innovations",
+            "duration": "April 2023 - Present"
+        },
+        {
+            "id":2,
+            "name":"React developer",
+            "duration": "April 2023 - Present"
+        }
+    ]
+}
