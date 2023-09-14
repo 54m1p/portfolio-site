@@ -3,8 +3,10 @@
         display: flex;
         flex-direction: column;
     }
-    
-
+    .counter-div{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media only screen and (min-width:600px){
@@ -12,15 +14,21 @@
         display: grid;
         grid-template-columns: auto auto;
     }
+    .services-home div{
+        padding: 10px;
+    }
+    .counter-div{
+        justify-content: space-around;
+        width: 80%;
+        margin: 0 auto  ;
+    }
 }
-
 @media only screen and (min-width:768px){
     .services-home{
         display: flex;
     }
     .services-home div{
     width: 20rem;
-
     }
 }
 
@@ -28,5 +36,40 @@
     border: 1px solid #80808066;
     padding: 1rem;
     border-radius: 10px;
-    /* margin: 10px; */
+    margin: 10px;
 }   
+
+.react-logo{
+    will-change: filter;
+    transition: filter 300ms;
+}
+/* Spinning react logo */
+@keyframes logo-spin{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+@media (prefers-reduced-motion: no-preference){
+    .react-logo{
+        animation: logo-spin infinite 7s linear;
+    }
+}
+
+.counter {
+    border: 1px solid #80808066;
+    border-radius: 10px;
+    font-size: 2rem;
+    padding: 0.5rem;
+    margin: 0.75rem;
+    /* box-shadow: 1px -1px 4px 0px; */
+}
+.counter-div{
+    margin-bottom: 1rem;
+}
+
+.count-icon{
+    color:#4c5a1e8a
+}

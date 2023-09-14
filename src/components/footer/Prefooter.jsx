@@ -8,7 +8,7 @@ const Prefooter = ()=>{
     return(
         <div className="bg-black text-white">
             <div className="container">
-                <div className='prefoot my-5'>
+                <div className='prefoot '>
                     <div className='my-3'>
                         <Link className='link' to="/"><img src={logo} alt="logo" /></Link>
                     </div>

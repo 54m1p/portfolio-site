@@ -64,7 +64,10 @@ const About = () => {
                                 {experiences.experience.map((experience) => (
                                     
                                         <li className="exp-li d-flex">
-                                             <strong><GoDotFill />({experience.duration})</strong><span></span><span> {experience.name} </span>{experience.company && <span> at {experience.company}</span>}
+                                             <strong className="exp-duration d-flex"><GoDotFill />({experience.duration})</strong>
+                                             <span>
+                                                <span> {experience.name} </span>{ experience.company && <span> at {experience.company}</span>}
+                                                </span>
                                         </li>
                                 
                                 ))}
