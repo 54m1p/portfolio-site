@@ -30,4 +30,19 @@
     .project-edu{
         justify-content: space-around;
     }
+    .exp-li{
+        justify-content: left;
+    }
+    .exp-duration{
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width:768px){
+        .skill{
+            width: 50%;
+        }
+        .exp{
+            width: 50%;
+        }
 }

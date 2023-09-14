@@ -4,8 +4,9 @@ import '../../css/home.css'
 import Footer from "../footer/Footer";
 import services from '../../../json/services.json';
 import Service from "../others/Service";
-// import { useState } from "react";
-// import BackgroundImage from "../BackgroundImage";
+import ReactSpin from "./ReactSpin";
+import {FaThumbsUp} from 'react-icons/fa'
+import ProjectCounter from "../others/ProjectCounter";
 
 const Home = () => {
     return (
@@ -18,7 +19,9 @@ const Home = () => {
                 <div className=" section bg-black text-white">
                     <div className="container center-xy">
                         <div>
-                        <p className="display-4" ><span className="display-2">Hi,</span> I am Samip. I am a Web Developer</p>
+                        <div className="display-4">
+                            <span className="display-2">Hi,</span>
+                            <span> I am Samip. I am a </span><span className="react-icon"><ReactSpin/></span> Developer</div>
                         </div>
                     </div>
                 </div>
@@ -41,11 +44,11 @@ const Home = () => {
                     </div>
                 </div>
                 </div>
-                {/* <div className="section text-black">
-                    <div className="container">
-                        <h2 className="m-5 display-5 text-center text-black">My professional design services</h2>
+                <div className=" ">
+                    <div className="">
+                                <ProjectCounter/>
                     </div>
-                </div> */}
+                </div>
             </div>
             <Footer/>
         </>
