@@ -1,0 +1,5 @@
+export const name = "Samip Neupane"
+export const email = "samipneupane.18@gmail.com"
+export const address = "Kathmandu, Nepal"
+export const phoneNo = "+977 9860866680"
+export const year = "2024"

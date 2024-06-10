@@ -1,9 +1,5 @@
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import {
-  AiFillLinkedin,
-  AiFillGithub,
-  AiOutlineInstagram,
-} from "react-icons/Ai";
 
 const Socials = () => {
   return (
@@ -14,12 +10,12 @@ const Socials = () => {
           target="_blank"
           className="link"
         >
-          <AiFillLinkedin />
+          <FaLinkedin />
         </Link>{" "}
       </h3>
       <h3>
         <Link to="https://github.com/54m1p" target="_blank" className="link">
-          <AiFillGithub />
+          <FaGithub />
         </Link>
       </h3>
       <h3>
@@ -28,7 +24,7 @@ const Socials = () => {
           target="_blank"
           className="link"
         >
-          <AiOutlineInstagram />
+         <FaInstagram />
         </Link>
       </h3>
     </div>
